@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="portfolio.css">
+  </head>
+  <body>
+    <nav>
+      <ul class="sidebar">
+        <li onClick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Skills</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <ul>
+        <li><a href="#">Aidan Ross</a></li>
+        <li class="hideOnMobile"><a href="#">Home</a></li>
+        <li class="hideOnMobile"><a href="#">About</a></li>
+        <li class="hideOnMobile"><a href="#">Skills</a></li>
+        <li class="hideOnMobile"><a href="#">Projects</a></li>
+        <li class="hideOnMobile"><a href="#">Contact</a></li>
+        <li class="menu-button" onClick=showSidebar()><a href=#><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+      </ul>
+    </nav>
+    <div class="container" id="con1">
+      <div class="box" id="box1"></div>
+    <div class="container" id="con2">
+      <div class="box" id="box2">
+        Hi, I'm Aidan Ross, a passionate software developer with a strong foundation in computer science and a love for solving complex problems. 
+        Currently pursuing a degree in Computer Science, I specialize in designing and developing efficient software solutions. My interests include game development, 
+        software engineering, and statistical analysis, particularly in large-scale systems. I thrive on continuous learning and enjoy turning innovative ideas into reality through code.</div>
+      <div class="box" id="box3">Data-driven, detail-oriented, always curious.</div>
+    </div>
+
+    <script>
+      function showSidebar(){
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display = 'flex'
+      }
+
+      function hideSidebar(){
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display = 'none'
+      }
+    </script>
+  </body>
+</html>
